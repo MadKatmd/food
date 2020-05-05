@@ -55,7 +55,7 @@ function notAutorized() {
         login = loginInput.value;
 
 /*
-        if(loginInput.value){
+        if(loginInput.value.trim){
 
           login = loginInput.value;
           localStorage.setItem('foodDelivery', login);
