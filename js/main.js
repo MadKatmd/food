@@ -54,6 +54,22 @@ function notAutorized() {
         event.preventDefault();
         login = loginInput.value;
 
+/*
+        if(loginInput.value){
+
+          login = loginInput.value;
+          localStorage.setItem('foodDelivery', login);
+          //toggleModalAuth();
+          buttonAuth.removeEventListener('click', toggleModalAuth);
+          closeAuth.removeEventListener('click', toggleModalAuth);
+          logInForm.removeEventListener('submit', logIn);
+          logInForm.reset();
+          checkAuth();
+        } else{
+          loginInput.style.borderColor = 'red';
+        }
+*/
+
         localStorage.setItem('foodDelivery', login)
 
         if (login) {
